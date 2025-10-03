@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL, 
+    origin: process.env.FRONTEND_URL,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -50,7 +50,7 @@ app.use("/api/CategoryRouter", CategoryRouter);
 app.use("/api/imagerouter", Imageroute);
 app.use("/api/subcategoryrouter", Subcategoryroute);
 app.use("/api/uploadproductrouter", uploadproductroute);
-app.use("/api/cart",CartRouter)
+app.use("/api/cart", CartRouter);
 
 // Connect to MongoDB
 connectDB().then(() => {
