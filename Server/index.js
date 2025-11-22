@@ -7,7 +7,7 @@ import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import morgan from "morgan";
 import connectDB from "./config/connectionDB.js";
-import router from "./routes/userregistration.route.js";
+import router from "./routes/userregistrationroute.js"
 import CategoryRouter from "./routes/categoryrouteselection.js";
 import Imageroute from "./routes/imageroutes.js";
 import Category from "./models/category.model.js";
